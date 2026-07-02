@@ -1,6 +1,7 @@
 import React from "react";
 import { Truck, MapPin, Map, Clock, ShieldAlert, ArrowRight, MessageSquare } from "lucide-react";
 import { COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function DeliverySection() {
   return (
@@ -109,7 +110,7 @@ export default function DeliverySection() {
                   rel="noopener noreferrer"
                   className="w-full bg-[#10B981] hover:bg-[#059669] text-white font-black text-xs uppercase tracking-wider py-4 px-4 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer border-b-2 border-black/20"
                 >
-                  <MessageSquare className="h-4.5 w-4.5 fill-white text-[#10B981]" />
+                  <WhatsAppIcon className="h-4.5 w-4.5 text-white" />
                   <span>Consultar Entrega en Mi Zona</span>
                 </a>
                 

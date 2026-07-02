@@ -1,6 +1,7 @@
 import React from "react";
 import { User, Hammer, ClipboardList, RefreshCw, MessageSquare } from "lucide-react";
 import { CLIENT_SEGMENTS, COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function ClientsInfo() {
   const getIcon = (title: string) => {
@@ -79,7 +80,7 @@ export default function ClientsInfo() {
                   rel="noopener noreferrer"
                   className="bg-white hover:bg-[#F3F4F6] text-charcoal hover:text-charcoal/90 border border-gray-300 px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-2 transition-all cursor-pointer shadow-sm"
                 >
-                  <MessageSquare className="h-3.5 w-3.5 text-brand fill-brand" />
+                  <WhatsAppIcon className="h-4 w-4 text-emerald-500 shrink-0" />
                   <span>Consultar como {segment.title.replace("Para ", "")}</span>
                 </a>
               </div>

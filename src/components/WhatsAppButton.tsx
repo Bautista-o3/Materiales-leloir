@@ -1,6 +1,7 @@
 import React from "react";
 import { MessageSquare, Phone } from "lucide-react";
 import { COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function WhatsAppButton() {
   return (
@@ -17,7 +18,7 @@ export default function WhatsAppButton() {
           {/* Pulsing ring animation */}
           <span className="absolute inset-0 rounded-full bg-emerald-500/30 animate-ping -z-10" />
           
-          <MessageSquare className="h-6 w-6 fill-white text-emerald-500" />
+          <WhatsAppIcon className="h-6 w-6 text-white" />
           
           {/* Tooltip */}
           <span className="absolute right-14 bg-zinc-950 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-zinc-800">
@@ -44,7 +45,7 @@ export default function WhatsAppButton() {
           rel="noopener noreferrer"
           className="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider py-3.5 px-3 rounded-xl flex items-center justify-center gap-2 transition-all active:bg-emerald-700 shadow-md shadow-emerald-950/20"
         >
-          <MessageSquare className="h-4 w-4 fill-white text-emerald-600" />
+          <WhatsAppIcon className="h-4 w-4 text-white" />
           <span>WhatsApp Obra</span>
         </a>
       </div>

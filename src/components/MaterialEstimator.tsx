@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Calculator, Check, Plus, AlertTriangle, HelpCircle } from "lucide-react";
 import { EstimationResult } from "../types";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 interface MaterialEstimatorProps {
   onAddMaterials: (items: { name: string; quantity: number; unit: string }[]) => void;
@@ -590,8 +591,9 @@ export default function MaterialEstimator({ onAddMaterials }: MaterialEstimatorP
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-brand hover:bg-brand/90 text-charcoal font-black text-xs uppercase tracking-wider py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all text-center border-b-2 border-black/20"
+                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all text-center border-b-2 border-black/20"
                 >
+                  <WhatsAppIcon className="h-4.5 w-4.5 text-white" />
                   Cotizar por WhatsApp
                 </a>
               </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageSquare, FileText } from "lucide-react";
 import { COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,7 +82,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-500 text-white px-3.5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 transition-colors border-b-2 border-black/20"
             >
-              <MessageSquare className="h-3.5 w-3.5 fill-white text-emerald-600" />
+              <WhatsAppIcon className="h-4 w-4 text-white" />
               <span>WhatsApp</span>
             </a>
             <a
@@ -135,7 +136,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="bg-emerald-600 text-center text-white py-2.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-emerald-500 border-b-2 border-black/20"
             >
-              <MessageSquare className="h-3.5 w-3.5 fill-white text-emerald-600" />
+              <WhatsAppIcon className="h-4 w-4 text-white" />
               WhatsApp
             </a>
             <a

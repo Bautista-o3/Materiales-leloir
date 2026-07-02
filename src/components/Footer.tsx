@@ -1,6 +1,7 @@
 import React from "react";
 import { Award, ShieldCheck, Phone, MapPin, MessageSquare, ChevronUp } from "lucide-react";
 import { COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function Footer() {
   const handleScrollTop = () => {
@@ -115,7 +116,7 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center gap-2.5 pt-1.5 border-t border-zinc-900">
-                <MessageSquare className="h-4 w-4 text-[#10B981] fill-[#10B981]/10 shrink-0" />
+                <WhatsAppIcon className="h-4 w-4 text-[#10B981] shrink-0" />
                 <a href={COMPANY_INFO.whatsappLink} target="_blank" rel="noopener noreferrer" className="font-black text-white hover:text-brand transition-all">
                   WhatsApp: +54 9 11 4621-1467
                 </a>

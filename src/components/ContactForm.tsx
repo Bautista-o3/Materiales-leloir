@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Phone, MapPin, MessageSquare, ClipboardList, Trash2, Calendar, Check, ArrowRight, Map } from "lucide-react";
 import { COMPANY_INFO } from "../data";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 interface ContactFormProps {
   selectedItems: { name: string; quantity: number; unit: string }[];
@@ -292,9 +293,9 @@ export default function ContactForm({ selectedItems, onRemoveItem, onUpdateQty, 
                   <button
                     type="button"
                     onClick={handleWhatsAppSubmit}
-                    className="w-full bg-brand hover:bg-brand/90 text-charcoal font-black text-xs uppercase tracking-wider py-4 px-4 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer border-b-2 border-black/20"
+                    className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider py-4 px-4 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer border-b-2 border-black/20"
                   >
-                    <MessageSquare className="h-4 w-4 fill-charcoal text-brand" />
+                    <WhatsAppIcon className="h-4.5 w-4.5 text-white" />
                     <span>Enviar por WhatsApp</span>
                   </button>
                 </div>
