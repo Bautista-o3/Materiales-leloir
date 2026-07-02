@@ -1,0 +1,6 @@
+{
+  "name": "Materiales Leloir",
+  "description": "Página web moderna, profesional y altamente vendedora para el corralón de materiales de construcción Materiales Leloir, con 70 años de trayectoria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
